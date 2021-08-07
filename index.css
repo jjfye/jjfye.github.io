@@ -1,0 +1,95 @@
+#main-nav{
+    font-size: 18px;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+
+.navbar-nav .nav-item{
+    margin-left: 25px;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: black;
+}
+
+.navbar-nav .nav-item .nav-link{
+    position: relative;
+}
+
+.navbar-nav .nav-item .nav-link::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: black;
+    transition: all 0.5s ease;
+    transform: scale(0);
+}
+
+.navbar-nav .nav-item .nav-link.active::before,
+.navbar-nav .nav-item .nav-link:hover::before{
+    transform: scale(1);
+}
+
+.from-left{
+    grid-column: 2/3;
+    transform: translateX(-110%);
+}
+
+.from-right{
+    grid-column: 3/4;
+    transform: translateX(100%);
+}
+
+.from-left,
+.from-right{
+    transition: transform 600ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear{
+    transform: translateX(0);
+}
+
+body {
+    overflow-x:hidden;
+}
+p{
+padding: 10px 0;
+margin: -10px 50px;
+}
+img{
+border-radius: 30%;
+}
+
+#myName{
+font-size: 100px;
+}
+#learnMoreBtn{
+margin-top: 25px;	
+}
+#space{
+height: 200px ;
+}
+#aboutText{
+padding-bottom: 200px;
+}
+.pageHeadings{
+padding-top: 50px;
+}
+
+.fade{
+opacity: 0;
+transition: opacity 1.5s ease-in;
+}
+.fade.appear{
+opacity: 1;
+}
+
+#intro{
+    padding-top: 150px;
+}
