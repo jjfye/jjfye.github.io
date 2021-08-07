@@ -37,22 +37,25 @@
 
 .from-left{
     grid-column: 2/3;
-    transform: translateX(-110%);
+    transform: translateX(-50%);
 }
 
 .from-right{
     grid-column: 3/4;
-    transform: translateX(100%);
+    transform: translateX(50%);
 }
 
 .from-left,
 .from-right{
-    transition: transform 600ms ease-in;
+    transition: opacity 850ms ease-in,
+    transform 600ms ease-in;
+    opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear{
     transform: translateX(0);
+    opacity: 1;
 }
 
 body {
@@ -84,7 +87,7 @@ padding-top: 50px;
 
 .fade{
 opacity: 0;
-transition: opacity 1.5s ease-in;
+transition: opacity 1.3s ease-in;
 }
 .fade.appear{
 opacity: 1;
