@@ -43,7 +43,7 @@
 
 .from-right{
     grid-column: 3/4;
-    transform: translateX(50%);
+    transform: translateX(10%);
 }
 
 .from-left,
