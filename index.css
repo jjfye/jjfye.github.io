@@ -89,6 +89,12 @@ height: 200px ;
 #aboutText{
 padding-bottom: 200px;
 }
+#projectText{
+padding-bottom: 200px;
+}
+#contactText{
+padding-bottom: 55px;
+}
 .pageHeadings{
 padding-top: 50px;
 }
@@ -103,4 +109,8 @@ opacity: 1;
 
 #intro{
     padding-top: 150px;
+}
+
+form{
+    padding-bottom: 100px;
 }

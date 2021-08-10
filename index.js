@@ -28,3 +28,7 @@ const appearOnScroll = new IntersectionObserver
     sliders.forEach(slider => {
         appearOnScroll.observe(slider);
     });
+
+    function thankYouMSG(){
+        alert("Thank you, your message has been submitted!")
+    }

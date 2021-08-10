@@ -6,6 +6,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<title>JJFYE</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<style>
 	</style>
 </head>
@@ -114,7 +115,7 @@
 					</h1>
 				</div>
 					<div class="col-12 col-md-6 text-center">
-						<p id="aboutText" class="fade">
+						<p id="projectText" class="fade">
 							Here is a list of my past projects.
 						</p>
 					</div>
@@ -137,14 +138,48 @@
 					</h1>
 				</div>
 					<div class="col-12 col-md-6 text-center">
-						<p id="aboutText" class="fade">
-							You can reach out to me via these links
+						<p id="contactText" class="fade">
+							Questions to ask? Fill out this form below to contact me!
 						</p>
 					</div>
 					<!-- Add in icons & links to my linkedin, github, email inputs and mobile number-->
 			</div>
+			<!-- form-control, form-label, form-select, input-group-text -->
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="fade">
+						<form action="https://formsubmit.co/jjfye882@gmail.com" onsubmit="thankYouMSG()" method="POST">
+							<input type="hidden" name="_captcha" value="false">
+							<input type="hidden" name="_next" value="https://jjfye.github.io/">
+							<div class="mb-2 input-group">
+								<span class="input-group-text">
+									<i class="bi bi-envelope-fill"></i>
+								</span>
+							<input type="email" class="form-control" name="email" id="email" placeholder="example@gmail.com" required>
+							</div>
+							
+							<div class="mb-3 input-group">
+								<span class="input-group-text">
+									<i class="bi bi-person-fill"></i>
+								</span>
+							<input type="text" class="form-control" name="name" id="name" placeholder="Jason Ye" required>
+							</div>
+							
+							<div class="form-floating mb-3 mt-3">
+							<textarea type="text" name="message" id="message" class="form-control" style="height: 70px"required></textarea>
+							<label for="query">What would you like to ask Jason?</label>
+							</div>
+						
+							<div class="mb-4 text-center">
+								<button type="submit" class="btn btn-secondary">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
+
 
 	<script src="index.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
