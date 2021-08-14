@@ -146,6 +146,9 @@ form{
     margin-bottom: 20px;
 }
 
+footer{
+    color: grey;
+}
 ul{
     list-style: none;
 }
