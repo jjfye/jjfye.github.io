@@ -125,7 +125,7 @@ opacity: 1;
     text-shadow: 0px 1px 2px rgb(0 0 0 / 40%);
 }
 .socialIcons:hover{
-    color: darkcyan;
+    color: grey;
     transition: 300ms ease-in-out;
 }
 form{
@@ -140,4 +140,20 @@ form{
 
 #contactMeNav{
     margin-right: -10px;
+}
+
+.progress{
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.progress-bar{
+    background-color: grey;
+}
+
+.skills{
+    margin-left: -35px;
 }
