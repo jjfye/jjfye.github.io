@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="w-[60%]">
       <div className='text-center text-3xl'>
-        Hi I'm Jason.
+        Hi I&apos;m Jason. {/* Escape ' using &apos; */}
         <div className="py-4">
           <Link href="/about" className="group hover:text-green-300 transition text-xl">
               Learn more
